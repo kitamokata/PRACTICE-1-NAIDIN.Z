@@ -57,40 +57,40 @@
 // Console.WriteLine($"25 / 4 как double: {studentsPerGroupCorrect}");
 
 
-// строки
-Console.WriteLine();
-Console.WriteLine("Способы собрать строку");
+// // строки
+// Console.WriteLine();
+// Console.WriteLine("Способы собрать строку");
 
-string firstName = "Анна";
-string lastName = "Смирнова";
+// string firstName = "Анна";
+// string lastName = "Смирнова";
 
-// Способ 1: конкатенация через оператор +
-string fullNameConcat = firstName + " " + lastName;
+// // Способ 1: конкатенация через оператор +
+// string fullNameConcat = firstName + " " + lastName;
 
-// Способ 2: интерполяция через$""
-string fullNameInterp = $"{firstName} {lastName}";
+// // Способ 2: интерполяция через$""
+// string fullNameInterp = $"{firstName} {lastName}";
 
-// Способ 3: метод string.Concat
-string fullNameConcatMethod = string.Concat(firstName, " ", lastName);
+// // Способ 3: метод string.Concat
+// string fullNameConcatMethod = string.Concat(firstName, " ", lastName);
 
-Console.WriteLine(fullNameConcat);
-Console.WriteLine(fullNameInterp);
-Console.WriteLine(fullNameConcatMethod);
-Console.WriteLine($"Все три строки равны: {fullNameConcat == fullNameInterp && fullNameInterp == fullNameConcatMethod}");
+// Console.WriteLine(fullNameConcat);
+// Console.WriteLine(fullNameInterp);
+// Console.WriteLine(fullNameConcatMethod);
+// Console.WriteLine($"Все три строки равны: {fullNameConcat == fullNameInterp && fullNameInterp == fullNameConcatMethod}");
 
 
-// константы
-Console.WriteLine();
-Console.WriteLine("Константы");
+// // константы
+// Console.WriteLine();
+// Console.WriteLine("Константы");
 
-const double VatRate = 0.20;
-const string CollegeName = "ВФ Волгу";
+// const double VatRate = 0.20;
+// const string CollegeName = "ВФ Волгу";
 
-double productPrice = 1000;
-double priceWithVat = productPrice * (1 + VatRate);
+// double productPrice = 1000;
+// double priceWithVat = productPrice * (1 + VatRate);
 
-Console.WriteLine($"Учебное заведение: {CollegeName}");
-Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate:P0}): {priceWithVat}");
+// Console.WriteLine($"Учебное заведение: {CollegeName}");
+// Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate:P0}): {priceWithVat}");
 
 
 
