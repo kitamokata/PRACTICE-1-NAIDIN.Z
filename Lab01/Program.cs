@@ -91,6 +91,3 @@
 
 // Console.WriteLine($"Учебное заведение: {CollegeName}");
 // Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate:P0}): {priceWithVat}");
-
-
-
