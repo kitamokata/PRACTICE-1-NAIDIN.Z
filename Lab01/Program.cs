@@ -12,7 +12,7 @@
 // Console.WriteLine($"Бюджетное место: {isBudget}");
 
 
-
+// // комната
 // Console.WriteLine();
 // Console.WriteLine("Ремонт: комната");
 
@@ -27,7 +27,7 @@
 // Console.WriteLine($"Периметр: {roomPerimeter} м");
 
 
-
+// // ноутбук
 // Console.WriteLine();
 // Console.WriteLine("Покупка ноутбука в рассрочку");
 
@@ -35,6 +35,7 @@
 // int monthsCount = 12;
 // double interestRate = 0.08;
 
+// // этот блок кода определяет площадь и периметр комнаты
 // double totalWithInterest = laptopPrice * (1 + interestRate);
 // double monthlyPayment = totalWithInterest / monthsCount;
 
@@ -43,17 +44,53 @@
 // Console.WriteLine($"Платёж в месяц: {monthlyPayment} руб.");
 
 
-
+// деление
 // Console.WriteLine();
 // Console.WriteLine("Внимание: деление int");
 
 // int totalStudents = 25;
 // int groupsCount = 4;
 // int studentsPerGroupWrong = totalStudents / groupsCount;
-// double studentsPerGroupCorrect = (double)totalStudents / groupsCount;
+// double studentsPerGroupCorrect = (double)totalStudents / groupsCount; //double нужен для того чтобы округлить число
 
 // Console.WriteLine($"25 / 4 как int: {studentsPerGroupWrong}");
 // Console.WriteLine($"25 / 4 как double: {studentsPerGroupCorrect}");
+
+
+// строки
+Console.WriteLine();
+Console.WriteLine("Способы собрать строку");
+
+string firstName = "Анна";
+string lastName = "Смирнова";
+
+// Способ 1: конкатенация через оператор +
+string fullNameConcat = firstName + " " + lastName;
+
+// Способ 2: интерполяция через$""
+string fullNameInterp = $"{firstName} {lastName}";
+
+// Способ 3: метод string.Concat
+string fullNameConcatMethod = string.Concat(firstName, " ", lastName);
+
+Console.WriteLine(fullNameConcat);
+Console.WriteLine(fullNameInterp);
+Console.WriteLine(fullNameConcatMethod);
+Console.WriteLine($"Все три строки равны: {fullNameConcat == fullNameInterp && fullNameInterp == fullNameConcatMethod}");
+
+
+// константы
+Console.WriteLine();
+Console.WriteLine("Константы");
+
+const double VatRate = 0.20;
+const string CollegeName = "ВФ Волгу";
+
+double productPrice = 1000;
+double priceWithVat = productPrice * (1 + VatRate);
+
+Console.WriteLine($"Учебное заведение: {CollegeName}");
+Console.WriteLine($"Цена без НДС: {productPrice}, с НДС ({VatRate:P0}): {priceWithVat}");
 
 
 
